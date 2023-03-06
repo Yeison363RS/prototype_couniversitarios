@@ -18,7 +18,7 @@ function addTable() {
     let members = new Array()
     members[0] = new Array("Maria antonella lopez", "Gerente")
     members[1] = new Array("Julio cesar Gamboa", "Secretario")
-    
+
     for (i = 0; i < members.length; i++) {
         let tr = document.createElement('TR');
         for (j = 0; j < members[i].length; j++) {
@@ -29,5 +29,6 @@ function addTable() {
         tableBody.appendChild(tr);
     }  
 }
+
 addTable();
     

@@ -1,9 +1,18 @@
 google.charts.load('current', {packages:["orgchart"]});
 google.charts.setOnLoadCallback(drawChart);
 
-
-function clickHandler(e) {
-    alert('The user has clicked on ' + e.targetID);
+let orgMembers={
+  "Asamblea General":"La Asamblea General es .....",
+  'Junta de Vigilancia':"La junta de vigilancia es ....",
+  'Consejo de Administración':"El consejo de administración es ...",
+  'Revisor Fiscal':"El revisor fiscal es....",
+  'Gerente':"El gerente es la persona encargada de...",
+  'Comité de Crédito':"el comite de credito es el encargado de ...",
+  'Comité de Educación y Recreación':"El comite de educcacion y recreacion es el encargado de",
+  'Comité de Solidaridad':"El comite de solidaridad es el encargado de ...",
+  'Comité de Evaluación Cartera':"El Comité de Evaluación Cartera es el encargado de ...",
+  'Contador':"El contador de la cooperativa es el encargado de ...",
+  'Secretario Tesorero':"El secretario tesorero es el encargado de ....."
 }
 
 function drawChart() {
@@ -51,30 +60,32 @@ function drawChart() {
     orgChart.draw(data, options);
 
     function selectHandler() {
-        var selection = orgChart.getSelection();
-        var message = '';
+        let title=document.getElementById("modalTitle");
+        let bodyText=document.getElementById("modalText");
+
+        let selection = orgChart.getSelection();
+        let message = '';
+        let textTitle='';
+        $('#exampleModal').modal('show');
+
         for (var i = 0; i < selection.length; i++) {
           var item = selection[i];
           if (item.row != null && item.column != null) {
-            var str = data.getFormattedValue(item.row, item.column);
-            message += str + '\n';
+            textTitle=data.getFormattedValue(item.row, item.column)
+            message += data.getFormattedValue(item.row, item.column) + '\n';
           } else if (item.row != null) {
-            var str = data.getFormattedValue(item.row, 0);
-            message += str + '\n';
+            textTitle=data.getFormattedValue(item.row, 0)
+            message += orgMembers[data.getFormattedValue(item.row, 0)] + '\n';
           } else if (item.column != null) {
-            var str = data.getFormattedValue(0, item.column);
-            message += str + '\n';
+            textTitle=data.getFormattedValue(0, item.column)
+            message += orgMembers[data.getFormattedValue(0, item.column)]+ '\n';
           }
         }
-        if (message == '') {
-          message = 'nothing';
-        } else{
-            // document.getElementById('teamModal').style.display='block'
-            alert(message);
-            var modal = document.getElementById("teamModal");
-            ;
+        if (message != '') {
+          console.log(message)  
+          title.innerText=textTitle
+          bodyText.innerText=message
         }
-       
       }
 }
 
