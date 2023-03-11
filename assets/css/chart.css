@@ -1,0 +1,372 @@
+.my-inputs{
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 12px 15px;
+}
+
+.my-inputs:focus{
+  border-color: var(--color-primary);
+  box-shadow: none;
+}
+
+/*----------------------*/
+.btn-success-over {
+  color: #fff;
+  background-color: #008374;
+  border-color: #008374;
+  box-shadow: 0 0.125rem 0.25rem 0 #008374;
+}
+.btn-success-over:hover {
+  color: #fff;
+  background-color: #128073;
+  border-color: #128073;
+  transform: translateY(-1px);
+}
+.btn-check:focus + .btn-success-over, .btn-success-over:focus, .btn-success-over.focus {
+  color: #fff;
+  background-color: #128073;
+  border-color: #128073;
+  transform: translateY(0);
+  box-shadow: none;
+}
+.btn-check:checked + .btn-success-over, .btn-check:active + .btn-success-over, .btn-success-over:active, .btn-success-over.active, .show > .btn-success-over.dropdown-toggle {
+  color: #fff;
+  background-color: #008374;
+  border-color: #008374;
+}
+.btn-check:checked + .btn-success-over:focus, .btn-check:active + .btn-success-over:focus, .btn-success-over:active:focus, .btn-success-over.active:focus, .show > .btn-success-over.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.btn-success-over.disabled, .btn-success-over:disabled {
+  box-shadow: none;
+}
+
+/*-----------------------------------------------------------*/
+.center-block-chart {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-xs-1, .col-sm-1, .col-md-chart-1, .col-lg-chart-1, .col-xs-2, .col-sm-2, .col-md-chart-2, .col-lg-chart-2, .col-xs-3, .col-sm-3, .col-md-chart-3, .col-lg-chart-3, .col-xs-4, .col-sm-4, .col-md-chart-4, .col-lg-chart-4, .col-xs-5, .col-sm-5, .col-md-chart-5, .col-lg-chart-5, .col-xs-6, .col-sm-6, .col-md-chart-6, .col-lg-chart-6, .col-xs-7, .col-sm-7, .col-md-chart-7, .col-lg-chart-7, .col-xs-8, .col-sm-8, .col-md-chart-8, .col-lg-chart-8, .col-xs-9, .col-sm-9, .col-md-chart-9, .col-lg-chart-9, .col-xs-10, .col-sm-10, .col-md-chart-10, .col-lg-chart-10, .col-xs-11, .col-sm-11, .col-md-chart-11, .col-lg-chart-11, .col-xs-12, .col-sm-12, .col-md-chart-12, .col-lg-chart-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (min-width: 992px) {
+    .col-md-chart-1, .col-md-chart-2, .col-md-chart-3, .col-md-chart-4, .col-md-chart-5, .col-md-chart-6, .col-md-chart-7, .col-md-chart-8, .col-md-chart-9, .col-md-chart-10, .col-md-chart-11, .col-md-chart-12 {
+      float: left;
+    }
+    .col-md-chart-12 {
+      width: 100%;
+    }
+    .col-md-chart-11 {
+      width: 91.66666667%;
+    }
+    .col-md-chart-10 {
+      width: 83.33333333%;
+    }
+    .col-md-chart-9 {
+      width: 75%;
+    }
+    .col-md-chart-8 {
+      width: 66.66666667%;
+    }
+    .col-md-chart-7 {
+      width: 58.33333333%;
+    }
+    .col-md-chart-6 {
+      width: 50%;
+    }
+    .col-md-chart-5 {
+      width: 41.66666667%;
+    }
+    .col-md-chart-4 {
+      width: 33.33333333%;
+    }
+    .col-md-chart-3 {
+      width: 25%;
+    }
+    .col-md-chart-2 {
+      width: 16.66666667%;
+    }
+    .col-md-chart-1 {
+      width: 8.33333333%;
+    }
+    .col-md-chart-pull-12 {
+      right: 100%;
+    }
+    .col-md-chart-pull-11 {
+      right: 91.66666667%;
+    }
+    .col-md-chart-pull-10 {
+      right: 83.33333333%;
+    }
+    .col-md-chart-pull-9 {
+      right: 75%;
+    }
+    .col-md-chart-pull-8 {
+      right: 66.66666667%;
+    }
+    .col-md-chart-pull-7 {
+      right: 58.33333333%;
+    }
+    .col-md-chart-pull-6 {
+      right: 50%;
+    }
+    .col-md-chart-pull-5 {
+      right: 41.66666667%;
+    }
+    .col-md-chart-pull-4 {
+      right: 33.33333333%;
+    }
+    .col-md-chart-pull-3 {
+      right: 25%;
+    }
+    .col-md-chart-pull-2 {
+      right: 16.66666667%;
+    }
+    .col-md-chart-pull-1 {
+      right: 8.33333333%;
+    }
+    .col-md-chart-pull-0 {
+      right: auto;
+    }
+    .col-md-chart-push-12 {
+      left: 100%;
+    }
+    .col-md-chart-push-11 {
+      left: 91.66666667%;
+    }
+    .col-md-chart-push-10 {
+      left: 83.33333333%;
+    }
+    .col-md-chart-push-9 {
+      left: 75%;
+    }
+    .col-md-chart-push-8 {
+      left: 66.66666667%;
+    }
+    .col-md-chart-push-7 {
+      left: 58.33333333%;
+    }
+    .col-md-chart-push-6 {
+      left: 50%;
+    }
+    .col-md-chart-push-5 {
+      left: 41.66666667%;
+    }
+    .col-md-chart-push-4 {
+      left: 33.33333333%;
+    }
+    .col-md-chart-push-3 {
+      left: 25%;
+    }
+    .col-md-chart-push-2 {
+      left: 16.66666667%;
+    }
+    .col-md-chart-push-1 {
+      left: 8.33333333%;
+    }
+    .col-md-chart-push-0 {
+      left: auto;
+    }
+    .col-md-chart-offset-12 {
+      margin-left: 100%;
+    }
+    .col-md-chart-offset-11 {
+      margin-left: 91.66666667%;
+    }
+    .col-md-chart-offset-10 {
+      margin-left: 83.33333333%;
+    }
+    .col-md-chart-offset-9 {
+      margin-left: 75%;
+    }
+    .col-md-chart-offset-8 {
+      margin-left: 66.66666667%;
+    }
+    .col-md-chart-offset-7 {
+      margin-left: 58.33333333%;
+    }
+    .col-md-chart-offset-6 {
+      margin-left: 50%;
+    }
+    .col-md-chart-offset-5 {
+      margin-left: 41.66666667%;
+    }
+    .col-md-chart-offset-4 {
+      margin-left: 33.33333333%;
+    }
+    .col-md-chart-offset-3 {
+      margin-left: 25%;
+    }
+    .col-md-chart-offset-2 {
+      margin-left: 16.66666667%;
+    }
+    .col-md-chart-offset-1 {
+      margin-left: 8.33333333%;
+    }
+    .col-md-chart-offset-0 {
+      margin-left: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-chart-1, .col-lg-chart-2, .col-lg-chart-3, .col-lg-chart-4, .col-lg-chart-5, .col-lg-chart-6, .col-lg-chart-7, .col-lg-chart-8, .col-lg-chart-9, .col-lg-chart-10, .col-lg-chart-11, .col-lg-chart-12 {
+      float: left;
+    }
+    .col-lg-chart-12 {
+      width: 100%;
+    }
+    .col-lg-chart-11 {
+      width: 91.66666667%;
+    }
+    .col-lg-chart-10 {
+      width: 83.33333333%;
+    }
+    .col-lg-chart-9 {
+      width: 75%;
+    }
+    .col-lg-chart-8 {
+      width: 66.66666667%;
+    }
+    .col-lg-chart-7 {
+      width: 58.33333333%;
+    }
+    .col-lg-chart-6 {
+      width: 50%;
+    }
+    .col-lg-chart-5 {
+      width: 41.66666667%;
+    }
+    .col-lg-chart-4 {
+      width: 33.33333333%;
+    }
+    .col-lg-chart-3 {
+      width: 25%;
+    }
+    .col-lg-chart-2 {
+      width: 16.66666667%;
+    }
+    .col-lg-chart-1 {
+      width: 8.33333333%;
+    }
+    .col-lg-chart-pull-12 {
+      right: 100%;
+    }
+    .col-lg-chart-pull-11 {
+      right: 91.66666667%;
+    }
+    .col-lg-chart-pull-10 {
+      right: 83.33333333%;
+    }
+    .col-lg-chart-pull-9 {
+      right: 75%;
+    }
+    .col-lg-chart-pull-8 {
+      right: 66.66666667%;
+    }
+    .col-lg-chart-pull-7 {
+      right: 58.33333333%;
+    }
+    .col-lg-chart-pull-6 {
+      right: 50%;
+    }
+    .col-lg-chart-pull-5 {
+      right: 41.66666667%;
+    }
+    .col-lg-chart-pull-4 {
+      right: 33.33333333%;
+    }
+    .col-lg-chart-pull-3 {
+      right: 25%;
+    }
+    .col-lg-chart-pull-2 {
+      right: 16.66666667%;
+    }
+    .col-lg-chart-pull-1 {
+      right: 8.33333333%;
+    }
+    .col-lg-chart-pull-0 {
+      right: auto;
+    }
+    .col-lg-chart-push-12 {
+      left: 100%;
+    }
+    .col-lg-chart-push-11 {
+      left: 91.66666667%;
+    }
+    .col-lg-chart-push-10 {
+      left: 83.33333333%;
+    }
+    .col-lg-chart-push-9 {
+      left: 75%;
+    }
+    .col-lg-chart-push-8 {
+      left: 66.66666667%;
+    }
+    .col-lg-chart-push-7 {
+      left: 58.33333333%;
+    }
+    .col-lg-chart-push-6 {
+      left: 50%;
+    }
+    .col-lg-chart-push-5 {
+      left: 41.66666667%;
+    }
+    .col-lg-chart-push-4 {
+      left: 33.33333333%;
+    }
+    .col-lg-chart-push-3 {
+      left: 25%;
+    }
+    .col-lg-chart-push-2 {
+      left: 16.66666667%;
+    }
+    .col-lg-chart-push-1 {
+      left: 8.33333333%;
+    }
+    .col-lg-chart-push-0 {
+      left: auto;
+    }
+    .col-lg-chart-offset-12 {
+      margin-left: 100%;
+    }
+    .col-lg-chart-offset-11 {
+      margin-left: 91.66666667%;
+    }
+    .col-lg-chart-offset-10 {
+      margin-left: 83.33333333%;
+    }
+    .col-lg-chart-offset-9 {
+      margin-left: 75%;
+    }
+    .col-lg-chart-offset-8 {
+      margin-left: 66.66666667%;
+    }
+    .col-lg-chart-offset-7 {
+      margin-left: 58.33333333%;
+    }
+    .col-lg-chart-offset-6 {
+      margin-left: 50%;
+    }
+    .col-lg-chart-offset-5 {
+      margin-left: 41.66666667%;
+    }
+    .col-lg-chart-offset-4 {
+      margin-left: 33.33333333%;
+    }
+    .col-lg-chart-offset-3 {
+      margin-left: 25%;
+    }
+    .col-lg-chart-offset-2 {
+      margin-left: 16.66666667%;
+    }
+    .col-lg-chart-offset-1 {
+      margin-left: 8.33333333%;
+    }
+    .col-lg-chart-offset-0 {
+      margin-left: 0;
+    }
+  }

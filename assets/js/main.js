@@ -4,6 +4,24 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+function verifyOnlyNumbers(event) {
+  var charCode = (event.which) ? event.which : event.keyCode;
+  if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+    event.preventDefault();
+  } else {
+    return true;
+  }
+}
+
+function GiveFormatNumber(numero) {
+  // Eliminar cualquier punto de mil que pueda haberse ingresado previamente
+  numero.value = numero.value.replace(/\./g,'');
+  
+  // Formatear el número con puntos de mil
+  var valor = parseFloat(numero.value.replace(/,/g,''));
+  numero.value = valor.toLocaleString('es-ES');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 

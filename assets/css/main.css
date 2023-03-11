@@ -36,14 +36,20 @@
   border-radius: 20px;
   border: 2px solid #f1f2f3;
 }
+.chart-div{
+  background-color: #fff;
+  /*3px 3px 3px #cdcaca;*/
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.fixed-heigth-scroll{
+  height: 500px;
+}
 .chart-scroll{
-  overflow-y: hidden;
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
-}
-#div-members{
-  box-shadow: 3px 3px 3px #cdcaca;
 }
 .nodes-char{
   background-color: #CCF1E4;
@@ -101,6 +107,34 @@
 
 #chart_div .google-visualization-orgchart-linetop {
   border-top: 2px solid black;
+}
+.ajust-item{
+  height: 250px;
+  width: auto;
+}
+.ajust-item-news{
+  height: 70%;
+  min-height: 250px;
+  width: auto;
+}
+.image_cover{
+  width: 100%; 
+  height: 100%;
+  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#btn-modal{
+  background: var(--color-primary);
+  border: 0;
+  padding: 14px 45px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#btn-modal:hover {
+  background: rgba(0, 131, 116, 0.8);
 }
 .nodes-selected{
   padding: 30px;
